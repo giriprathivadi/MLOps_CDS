@@ -17,6 +17,8 @@ print("paraen:", file.parents[1])
 print("paraen:", file.parent)
 
 import numpy as np
+from my_calc import add, sub, devide, mult
 
 def test_add(sample_input_data):
-    assert(sample_input_data < 10)
+    c = add(sample_input_data, sample_input_data)
+    assert(c == 20)

@@ -7,4 +7,4 @@ from sklearn.model_selection import train_test_split
 
 @pytest.fixture
 def sample_input_data():
-    return 8
+    return 10
