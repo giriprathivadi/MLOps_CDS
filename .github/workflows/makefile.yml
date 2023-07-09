@@ -12,10 +12,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    
-    -name : Install the requirements
-      run : pip install -r requirements.txt
+      - uses: actions/checkout@v3
 
-    - name: Run Tests
-      run: pytest
+
+      - name : Install the requirements
+        run :
+          pip3 install -r requirements.txt
+          . venv/bin/activate
+
+      - name: Run Tests
+        run: pytest
