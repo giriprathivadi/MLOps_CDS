@@ -22,3 +22,7 @@ from my_calc import add, sub, devide, mult
 def test_add(sample_input_data):
     c = add(sample_input_data, sample_input_data)
     assert(c == 20)
+
+def test_devide(sample_input_data):
+    c = devide(sample_input_data, sample_input_data)
+    assert(c == 1)
