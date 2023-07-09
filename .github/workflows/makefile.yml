@@ -18,7 +18,7 @@ jobs:
       - name : Install the requirements
         run :
           pip3 install -r requirements.txt
-          . venv/bin/activate
+
 
       - name: Run Tests
         run: pytest
