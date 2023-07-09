@@ -26,3 +26,7 @@ def test_add(sample_input_data):
 def test_devide(sample_input_data):
     c = devide(sample_input_data, sample_input_data)
     assert(c == 1)
+
+def test_mult(sample_input_data):
+    c = mult(sample_input_data, sample_input_data)
+    assert(c == 100)
